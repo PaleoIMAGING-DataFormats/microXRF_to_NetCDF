@@ -1,0 +1,58 @@
+RTX PAYLOAD REPORT
+- file: data\GRF17A_9-29cm_slab3_Elemental_map.rtx (43723950 bytes)
+- outer RTCompression: {'compressor': 'zlib', 'encoder': 'base64'}; RTData text starts at byte 300
+- Base64 characters: 43723624; decompressed bytes: 62915687
+- zlib stream finished: True; unused bytes after it: 0
+- text after </RTData>: '\r\n</TRTProject>\r\n'
+- first decompressed bytes: 3c 43 6f 6d 70 44 61 74 61 3e 3c 43 6c 61 73 73 49 6e 73 74 61 6e 63 65 20 54 79 70 65 3d 22 54 52 54 50 72 6f 6a 65 63 74 22 20 4e 61 6d 65 3d 22 42 72 75 6b 65 72 20 70 72 6f 6a 65 63 74 22
+- sha256 of decompressed payload: 832f6f4c090e5413033621335127f7095ceb9ff7f9f7c3604bca2ffba00d4b61
+- payload signature text: '<CompData><ClassInstance Type="TRTProject" Name="Bruker project"'
+- payload root: CompData; elements: 5305; max depth: 14
+- ClassInstance types: {'TRTProject': 1, 'TRTImageData': 3, 'TRTImageOverlay': 7, 'TRTImageConfigurationData': 3, 'TRTRectangleOverlayElement': 6, 'TRTLineOverlayElement': 6, 'TRTTextOverlayElement': 7, 'TRTMapConfigurationData': 1, 'TRTImagePalette': 1, 'TRTMapViewSettings': 1}
+- distinct tag names (86; trailing digits shown as #): ['Bottom', 'Brightness', 'BrushData', 'C#', 'ChildClassInstances', 'ClassInstance', 'Color', 'ColorMixMethod', 'ColorSaturation', 'Comment', 'Comment#', 'CompData', 'CopyData', 'Count', 'Data', 'Date', 'Description', 'Elements', 'FitRect', 'FixedSize', 'Flags', 'FontData', 'Gamma', 'HeadLength', 'HeadWidth', 'Height', 'ImageChannels', 'ImageRect', 'ItemSize', 'Left', 'LineCounter', 'MapAutomaticLegend', 'MapColor', 'MapFactor', 'MapFilterType', 'MapFilterWidth', 'MapImage#', 'MapImageParams', 'MapShowLegend', 'MapShowLineSeries', 'MapUsed', 'MarkColor', 'MarkColorFixed', 'MarkSize', 'Mode', 'Moveable', 'MultiImage', 'MultiSelect', 'Name', 'Options', 'Palette', 'PaletteMode', 'PenData', 'Plane#', 'PlaneCount', 'Pos', 'PosX', 'PosY', 'Rect', 'Right', 'Rotation', 'SEFilterType', 'ScaleBkColor', 'ScaleColor', 'ScaleTransparent', 'ScaleTrasparency', 'ScaleVisible', 'Size', 'Sizeable', 'Spacing', 'Style', 'TRTBasicLineOverlayElement', 'TRTHeaderedClass', 'TRTOverlayElement', 'TRTSolidOverlayElement', 'Tag', 'Text', 'TextFlags', 'Time', 'Top', 'Transparency', 'Valid', 'Visible', 'Width', 'XCalibration', 'YCalibration']
+
+IMAGE 0: 'Video Mosaic' at decompressed offset 86
+  ItemSize=1; Width=6000; Height=948; PlaneCount=3; MultiImage=0; XCalibration=31,308984675955; YCalibration=31,3089846759549; Date=30.7.2026; Time=9:38:26
+  planes decoded to Width x Height x ItemSize bytes, PlaneCount matches: True
+  plane  0 -        Size=5688000 decoded=5688000 data@2362 dtype=|u1 min=4 max=255 sum=560840716 nonzero=5688000
+  plane  1 -        Size=5688000 decoded=5688000 data@7588350 dtype=|u1 min=8 max=255 sum=526036488 nonzero=5688000
+  plane  2 -        Size=5688000 decoded=5688000 data@15174338 dtype=|u1 min=0 max=255 sum=525967475 nonzero=5686920
+  LineCounter distinct values per plane (meaning unknown): {0: {'1': 948}, 1: {'1': 948}, 2: {'1': 948}}
+  overlay texts: []
+  rectangle overlays: [('Map', {'Left': 0, 'Top': 0, 'Right': 0, 'Bottom': 0}), ('Map', {'Left': 740, 'Top': 89, 'Right': 5181, 'Bottom': 621})]
+
+IMAGE 1: 'Video Mosaic' at decompressed offset 22761856
+  ItemSize=1; Width=6000; Height=948; PlaneCount=3; MultiImage=0; XCalibration=31,308984675955; YCalibration=31,3089846759549; Date=30.7.2026; Time=9:55:51
+  planes decoded to Width x Height x ItemSize bytes, PlaneCount matches: True
+  plane  0 -        Size=5688000 decoded=5688000 data@22764132 dtype=|u1 min=4 max=255 sum=560840716 nonzero=5688000
+  plane  1 -        Size=5688000 decoded=5688000 data@30350120 dtype=|u1 min=8 max=255 sum=526036488 nonzero=5688000
+  plane  2 -        Size=5688000 decoded=5688000 data@37936108 dtype=|u1 min=0 max=255 sum=525967475 nonzero=5686920
+  LineCounter distinct values per plane (meaning unknown): {0: {'1': 948}, 1: {'1': 948}, 2: {'1': 948}}
+  overlay texts: ['40000 µm', 'Mosaik']
+  rectangle overlays: [('Rectangle 1', {'Left': 0, 'Top': 871, 'Right': 5999, 'Bottom': 947}), ('Map', {'Left': 0, 'Top': 0, 'Right': 0, 'Bottom': 0}), ('Map', {'Left': 192, 'Top': 89, 'Right': 5941, 'Bottom': 855})]
+  map display entries used: {}
+
+IMAGE 2: 'Mapdaten' at decompressed offset 45528486
+  ItemSize=2; Width=1800; Height=240; PlaneCount=15; MultiImage=1; XCalibration=100,014812159301; YCalibration=100,0148121593; Date=30.7.2026; Time=9:55:53
+  planes decoded to Width x Height x ItemSize bytes, PlaneCount matches: True
+  plane  0 Video 1  Size=864000 decoded=864000 data@45535007 dtype=<u2 min=3263 max=65280 sum=11806561069 nonzero=432000
+  plane  1 Ca-KA    Size=864000 decoded=864000 data@46692437 dtype=<u2 min=0 max=1607 sum=233524498 nonzero=420018
+  plane  2 K-KA     Size=864000 decoded=864000 data@47849866 dtype=<u2 min=0 max=63 sum=3155606 nonzero=409965
+  plane  3 S-KA     Size=864000 decoded=864000 data@49007295 dtype=<u2 min=0 max=61 sum=1375393 nonzero=372870
+  plane  4 Si-K     Size=864000 decoded=864000 data@50165126 dtype=<u2 min=0 max=20 sum=1235657 nonzero=369030
+  plane  5 Ti-KA    Size=864000 decoded=864000 data@51323201 dtype=<u2 min=0 max=114 sum=1128526 nonzero=360730
+  plane  6 Cr-KA    Size=864000 decoded=864000 data@52481033 dtype=<u2 min=0 max=205 sum=943848 nonzero=366046
+  plane  7 Mn-KA    Size=864000 decoded=864000 data@53639741 dtype=<u2 min=0 max=670 sum=4747393 nonzero=426546
+  plane  8 Fe-KA    Size=864000 decoded=864000 data@54797171 dtype=<u2 min=0 max=2159 sum=44031298 nonzero=431403
+  plane  9 Ni-KA    Size=864000 decoded=864000 data@55955879 dtype=<u2 min=0 max=36 sum=3253445 nonzero=426888
+  plane 10 Zn-KA    Size=864000 decoded=864000 data@57114588 dtype=<u2 min=0 max=257 sum=4973589 nonzero=430554
+  plane 11 Sr-KA    Size=864000 decoded=864000 data@58273298 dtype=<u2 min=0 max=50 sum=4339643 nonzero=430113
+  plane 12 Pd-KA    Size=864000 decoded=864000 data@59430730 dtype=<u2 min=0 max=19 sum=1271669 nonzero=380805
+  plane 13 Rh-KA    Size=864000 decoded=864000 data@60588162 dtype=<u2 min=0 max=27 sum=3057697 nonzero=429879
+  plane 14 Al-K     Size=864000 decoded=864000 data@61745995 dtype=<u2 min=0 max=18 sum=780938 nonzero=341637
+  LineCounter distinct values per plane (meaning unknown): {0: {'1': 240}, 1: {'3': 240}, 2: {'3': 240}, 3: {'3': 240}, 4: {'3': 240}, 5: {'3': 240}, 6: {'3': 240}, 7: {'3': 240}, 8: {'3': 240}, 9: {'3': 240}, 10: {'3': 240}, 11: {'3': 240}, 12: {'3': 240}, 13: {'3': 240}, 14: {'3': 240}}
+  overlay texts: ['40000 µm', 'Mapdaten', 'HV: 50,0 kV', 'Ca', 'Fe']
+  rectangle overlays: [('Rectangle 1', {'Left': 0, 'Top': 218, 'Right': 1799, 'Bottom': 239})]
+  map display entries used: {'MapImage1': {'MapUsed': '1', 'MapFactor': '1', 'MapColor': '16711680'}, 'MapImage8': {'MapUsed': '1', 'MapFactor': '1', 'MapColor': '255'}}
+
+- time: 1.11 s; peak working set: 54.0 MiB

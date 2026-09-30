@@ -1,0 +1,7 @@
+inspect: BCF GRF17A_9-29cm_slab3_Elemental_map.bcf 240 x 1800 x 4096; RTX GRF17A_9-29cm_slab3_Elemental_map.rtx
+grid correspondence validated: rtx_map_image_size_equals_bcf_grid; rtx_calibration_equals_bcf_pixel_size_x; rtx_calibration_equals_bcf_pixel_size_y; rtx_video_plane_bit_identical_to_bcf_video; bcf_header_video_image_equals_rosettasciio_video
+scan: 240 lines, 432000 pixels, max count 149, total counts 677896870, 7.52 s
+plan: dtype uint8; logical 1725 MiB (estimate); est. peak 495.3 MiB; free disk 355.9 GiB
+registration of mosaic instance rtx_1: verified (identity r=0.9955865323428974)
+written in 28.82 s
+readback: every_written_band_equals_a_fresh_decode=passed, stored_pixel_sum_spectrum_matches_stream=passed, counts_dtype_is_integer_and_unchanged=passed, video_equals_bcf_video=passed, video_equals_rtx_video_plane_sha256=passed, element_maps_equal_rtx_planes_sha256=passed, mosaic_planes_of_every_instance_equal_the_source_plane_sha256=passed, acquisition_grid_header_images_equal_the_source_plane_sha256=passed, overview_images_equal_the_source_plane_sha256=passed, energy_coordinate_equals_raw_calibration=passed, spatial_coordinates_equal_raw_pixel_sizes=passed

@@ -1,0 +1,155 @@
+{
+  "output": "C:\\Users\\abelem\\Documents\\GitHub\\test_microCT\\output\\GRF17A_9-29cm_slab3.nc",
+  "output_size_bytes": 226985418,
+  "output_sha256": "e6a723be8a6d4c95d0cd3601a7fab06d391106694a236ba706b7f65c3c90e3ae",
+  "conversion_seconds": 51.31,
+  "peak_working_set_mib": 453.4,
+  "counts_dtype": "uint8",
+  "compression": {
+    "zlib": true,
+    "complevel": 4,
+    "shuffle": true
+  },
+  "actual_layout": {
+    "acquisition/counts": {
+      "shape": [
+        240,
+        1800,
+        4096
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        2,
+        30,
+        4096
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "acquisition/video": {
+      "shape": [
+        240,
+        1800
+      ],
+      "dtype": "uint16",
+      "chunks": [
+        120,
+        900
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "acquisition/element_maps": {
+      "shape": [
+        14,
+        240,
+        1800
+      ],
+      "dtype": "uint16",
+      "chunks": [
+        1,
+        120,
+        900
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "mosaic/pixels": {
+      "shape": [
+        3,
+        948,
+        6000
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        1,
+        256,
+        1024
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "acquisition/pixel_times": {
+      "shape": [
+        240,
+        1800
+      ],
+      "dtype": "uint32",
+      "chunks": [
+        120,
+        900
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "overview/Image_0/pixels": {
+      "shape": [
+        3,
+        768,
+        1024
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        1,
+        256,
+        1024
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "overview/Image_1/pixels": {
+      "shape": [
+        3,
+        768,
+        1024
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        1,
+        256,
+        1024
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "overview/Image_2/pixels": {
+      "shape": [
+        3,
+        480,
+        752
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        1,
+        256,
+        752
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    }
+  }
+}

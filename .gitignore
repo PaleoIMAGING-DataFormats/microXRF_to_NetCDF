@@ -1,0 +1,42 @@
+# Conda / virtual environments
+.conda/
+.venv/
+venv/
+env/
+
+# Python caches and packaging artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test and tooling caches
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Temporary and OS files
+*.tmp
+*.log
+*.bak
+*~
+Thumbs.db
+.DS_Store
+
+# Original scientific acquisition data
+# Kept outside Git; see README.md for the reference dataset.
+data/
+*.bcf
+*.rtx
+*.raw
+*.h5
+*.hdf5
+
+# Generated scientific products
+output/
+outputs/
+*.nc
+*.nc4
+*.zarr/

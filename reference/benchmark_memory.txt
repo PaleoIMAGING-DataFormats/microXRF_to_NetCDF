@@ -1,0 +1,4 @@
+band_lines=1 chunks=(1, 60, 4096): peak working set 312.1 MiB, 46.99 s, estimate 356.4 MiB (estimate = ESTIMATE, peak = MEASURED)
+band_lines=4 chunks=(4, 60, 4096): peak working set 378.6 MiB, 47.82 s, estimate 450.5 MiB (estimate = ESTIMATE, peak = MEASURED)
+band_lines=8 chunks=(4, 60, 4096): peak working set 642.7 MiB, 49.45 s, estimate 693.2 MiB (estimate = ESTIMATE, peak = MEASURED)
+band_lines=20 chunks=(4, 60, 4096): peak working set 1324.4 MiB, 48.58 s, estimate 1421.2 MiB (estimate = ESTIMATE, peak = MEASURED)

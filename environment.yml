@@ -1,0 +1,14 @@
+name: microxrf_to_netcdf
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  # Every scientific dependency lives in requirements.txt (single source of truth). The two NetCDF entries below
+  # repeat its constraints for visibility; tests/test_environment_files.py keeps them identical. They are installed
+  # with pip, the route that was verified (the conda-forge route fails on the development machine with an SSL
+  # certificate error, so conda-side pins were not tested).
+  - pip:
+      - -r requirements.txt
+      - netCDF4>=1.7.4,<2
+      - xarray>=2026.7,<2027

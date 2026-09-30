@@ -1,0 +1,185 @@
+Authors: Andre L. Belem (https://github.com/andrebelem) and F.R.I.D.A.Y. (https://observatoriooceanografico.org/people/friday-bot)
+Read-only mode: no source data will be modified.
+Python: 3.12.14 (C:\Users\abelem\miniforge3\envs\microxrf_to_netcdf\python.exe)
+
+FILE INVENTORY
+- Name: CaFe.png
+  Size: 745736 bytes (728.26 KiB)
+  Modified (UTC): 2026-09-29T19:30:06.383508+00:00
+  Signature (first 32 bytes): 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 07 08 00 00 00 F0 08 02 00 00 00 9B 97 A7
+- Name: GRF17A_9-29cm_slab3_Elemental_map.bcf
+  Size: 617320728 bytes (588.72 MiB)
+  Modified (UTC): 2026-09-29T19:30:10.650320+00:00
+  Signature (first 32 bytes): 41 41 4D 56 48 46 53 53 FE FF FF FF FF FF FF 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+- Name: GRF17A_9-29cm_slab3_Elemental_map.rtx
+  Size: 43723950 bytes (41.70 MiB)
+  Modified (UTC): 2026-09-29T19:30:11.013946+00:00
+  Signature (first 32 bytes): 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 57 49
+- Name: Video Mosaic.png
+  Size: 8756354 bytes (8.35 MiB)
+  Modified (UTC): 2026-09-29T19:30:10.715677+00:00
+  Signature (first 32 bytes): 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 03 B4 00 00 17 70 08 02 00 00 00 03 4D 09
+
+COMPANION IMAGE HEADERS
+- CaFe.png: 1800 x 240 pixels, bit depth 8, color type 2.
+- Video Mosaic.png: 948 x 6000 pixels, bit depth 8, color type 2.
+
+RTX XML REPORT
+- File: GRF17A_9-29cm_slab3_Elemental_map.rtx
+- Well-formed XML: verified (full incremental parse completed).
+- Root element: TRTProject
+- Major root sections: RTHeader, RTData
+- Binary scan: 0 NUL byte(s) in 43723950 byte(s) scanned.
+- Embedded binary indication: possible; see NUL/base64-like counts below.
+- Element frequencies:
+  TRTProject: 1
+  RTHeader: 1
+  ProjectHeader: 1
+  Date: 1
+  Time: 1
+  Creator: 1
+  Comment: 1
+  RTCompression: 1
+  RTData: 1
+- Nesting hierarchy (parent > child):
+  ProjectHeader > Comment: 1
+  ProjectHeader > Creator: 1
+  ProjectHeader > Date: 1
+  ProjectHeader > Time: 1
+  RTHeader > ProjectHeader: 1
+  RTHeader > RTCompression: 1
+  TRTProject > RTData: 1
+  TRTProject > RTHeader: 1
+- Long text elements (payload not printed):
+  RTData: 1
+- Base64-like text elements (payload not printed):
+  RTData: 1
+- Short scalar XML values and attributes:
+  Date: 30.7.2026
+  Time: 15:58:47
+  RTCompression: [empty]; attributes: compressor='zlib', encoder='base64'
+- Candidate metadata (verified XML values; absent requested fields are not found):
+  Date: 30.7.2026
+  Time: 15:58:47
+- Requested acquisition fields:
+  Acquisition date/time: verified above
+  Instrument model: not found
+  Software version: not found
+  Sample identity: not found
+  Scan dimensions: not found
+  Spatial resolution: not found
+  Coordinate information: not found
+- Referenced files or formats:
+  not found
+
+BCF ROSETTASCIIO REPORT
+- File: GRF17A_9-29cm_slab3_Elemental_map.bcf
+- RosettaSciIO version: 0.14.0
+- Bruker reader API: rsciio.bruker.file_reader(filename, lazy=False, select_type=None, index=None, downsample=1, cutoff_at_kV=None, instrument=None)
+- Initial read request: {'lazy': True, 'select_type': 'images'} (image-only/lazy when supported).
+- Compatibility/read result: verified; returned 2 dataset(s).
+  Dataset 1: shape=(240, 1800), dtype=uint16, array_type=numpy.ndarray
+    Axis: name='height', size=240, scale=100.0148121593, offset=0, units='um'
+    Axis: name='width', size=1800, scale=100.014812159301, offset=0, units='um'
+    Dataset role: title='Video', signal_type=None
+    Dataset interpretation: two-dimensional image.
+    Metadata keys: Acquisition_instrument, General, Sample, Signal
+    Original metadata keys: DSP Configuration, Microscope, Stage
+    Scalar metadata (bounded):
+      Sample.name: Mapdaten
+      General.title: Video
+      General.original_filename: GRF17A_9-29cm_slab3_Elemental_map.bcf
+      original.Microscope.DX: 100.014812159301
+      original.Microscope.DY: 100.0148121593
+      original.Microscope.Flags: 65280
+      original.Microscope.XmlClassType: TRTSEMData
+      original.DSP Configuration.ImageWidth: 1800
+      original.DSP Configuration.ImageHeight: 240
+      original.DSP Configuration.PixelAverage: 10000
+      original.DSP Configuration.LineAverage: 1
+      original.DSP Configuration.SEBitCount: 16
+      original.DSP Configuration.ChannelCount: 1
+      original.DSP Configuration.Channel0: 1
+      original.DSP Configuration.CounterIndex: 0
+      original.DSP Configuration.CounterChannelUsed: 0
+      original.DSP Configuration.TiltAngle: 0
+      original.DSP Configuration.CounterMode: 0
+      original.DSP Configuration.PixelTime: 1
+      original.DSP Configuration.XmlClassType: TRTDSPConfiguration
+      original.Stage.State: 7936
+      original.Stage.XmlClassType: TRTSEMStageData
+  Dataset 2: shape=(240, 1800, 4096), dtype=uint8, array_type=dask.array.core.Array
+    Axis: name='height', size=240, scale=100.0148121593, offset=0, units='um'
+    Axis: name='width', size=1800, scale=100.0148121593, offset=0, units='um'
+    Axis: name='Energy', size=4096, scale=0.010001, offset=-0.96079607, units='keV'
+    Dataset role: title='EDX', signal_type='EDS_SEM'
+    Dataset interpretation: lazy EDS spectrum image; data values were not materialized.
+    Metadata keys: Acquisition_instrument, General, Sample, Signal
+    Original metadata keys: Analysis, DSP Configuration, Detector, Hardware, Line counter, Microscope, Spectrum, Stage
+    Scalar metadata (bounded):
+      Acquisition_instrument.SEM.Detector.EDS.elevation_angle: 50.0
+      Acquisition_instrument.SEM.Detector.EDS.detector_type: XFlash 430
+      Acquisition_instrument.SEM.Detector.EDS.real_time: 12960.0
+      Acquisition_instrument.SEM.beam_energy: 50
+      General.original_filename: GRF17A_9-29cm_slab3_Elemental_map.bcf
+      General.title: EDX
+      General.date: 2026-07-30
+      General.time: 09:55:52
+      Sample.name: Mapdaten
+      Signal.signal_type: EDS_SEM
+      Signal.quantity: X-rays (Counts)
+      original.Hardware.TRTKnownHeader.Type: RTHardware
+      original.Hardware.TRTKnownHeader.Size: 137
+      original.Hardware.ZeroPeakPosition: 97
+      original.Hardware.ZeroPeakFrequency: 11111
+      original.Hardware.Amplification: 40000.0
+      original.Hardware.ShapingTime: 130000
+      original.Hardware.XmlClassType: TRTSpectrumHardwareHeader
+      original.Detector.TRTKnownHeader.Type: RTDetector
+      original.Detector.TRTKnownHeader.Version: 3
+      original.Detector.TRTKnownHeader.Size: 9932
+      original.Detector.Technology: SDDpr
+      original.Detector.Serial: 7947073
+      original.Detector.Type: XFlash 430
+      original.Detector.DetectorThickness: 0.45
+      original.Detector.SiDeadLayerThickness: 0.029
+      original.Detector.DetLayers.Layer0.Atom: 13
+      original.Detector.DetLayers.Layer0.Thickness: 5E-3
+      original.Detector.DetLayers.Layer1.Atom: 7
+      original.Detector.DetLayers.Layer1.Thickness: 8.5E-2
+      original.Detector.DetLayers.Layer2.Atom: 5
+      original.Detector.DetLayers.Layer2.Thickness: 6E-3
+      original.Detector.DetLayers.Layer3.Atom: 6
+      original.Detector.DetLayers.Layer3.Thickness: 6E-3
+      original.Detector.DetLayers.Layer4.Atom: 8
+      original.Detector.DetLayers.Layer4.Thickness: 6.5E-2
+      original.Detector.WindowType: Custom type
+      original.Detector.WindowLayers.Layer0.Atom: 4
+      original.Detector.WindowLayers.Layer0.Thickness: 13.0
+      original.Detector.WindowLayers.Layer1.Atom: 13
+      original.Detector.WindowLayers.Layer1.Thickness: 0.035
+      original.Detector.Corrections.Tail.FormulaType: Internal
+      original.Detector.Corrections.Tail.MainCorrection: 1
+      original.Detector.Corrections.Shelf.FormulaType: Internal
+      original.Detector.Corrections.Shelf.RangeStart: 0.08
+      original.Detector.Corrections.Shelf.RangeEnd: 10.0
+      original.Detector.Corrections.Shelf.MainCorrection: 1
+      original.Detector.Corrections.Shelf.Coefficient0: 1
+      original.Detector.Corrections.Shift.FormulaType: Internal
+      original.Detector.Corrections.Shift.RangeStart: 0.08
+      [truncated: 44 additional scalar values]
+- Explicit elemental-map datasets: not found in the returned BCF datasets
+
+CROSS-FILE COMPARISON
+- RTX-to-BCF linkage: no explicit RTX reference found.
+- Filename evidence: BCF and RTX have the same filename stem.
+- Date evidence: RTX=30.7.2026; BCF=2026-07-30; same calendar date after format normalization.
+- Same-acquisition assessment: probable from matching filename stem, calendar date, and complementary project/data roles; not conclusively verified by an explicit cross-reference.
+- CaFe.png comparison: dimensions match the BCF two-dimensional image grid (1800 x 240); pixel values were not compared.
+- Video Mosaic.png comparison: dimensions do not match the BCF image grid; its pixel content was not compared.
+- Duplicate images/metadata: not verified beyond the CaFe.png grid match.
+
+UNRESOLVED QUESTIONS AND RECOMMENDED NEXT STEPS
+- Import into Hyper Fusion should begin with the BCF reader only after compatibility is verified above.
+- Preserve the RTX as complementary project metadata; map its verified fields to Hyper Fusion import fields.
+- Do not materialize a full hyperspectral cube until available memory and lazy-array behavior are confirmed.

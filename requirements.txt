@@ -1,0 +1,22 @@
+# microXRF to NetCDF runtime and test dependencies.
+# Constraints are lower-bounded by the versions verified in the working environment
+# (the "microxrf_to_netcdf" environment) and capped at the next major version.
+# Every entry is used by the code or the tests; the reason is stated next to it.
+
+# BCF reader (rsciio.bruker): SFS container reader and the compiled decoder; verified with 0.14.0.
+# microxrf_to_netcdf.bcf refuses to run outside 0.14.x because its record framing mirrors that version's decoder.
+rosettasciio>=0.14.0,<0.15
+# Lazy arrays returned by the BCF reader and used by xarray to reopen the output; verified with 2026.8.0.
+dask>=2026.8.0,<2027
+numpy>=2.5,<3
+# Incremental NetCDF-4 (HDF5) writer with per-variable chunking and zlib (microxrf_to_netcdf.writer); verified with 1.7.4.
+# With NumPy 2.5 it emits a harmless "Setting the shape on a NumPy array" DeprecationWarning that the writer filters.
+netCDF4>=1.7.4,<2
+# Lazy reopening of the output with Dask and the structure checks (microxrf_to_netcdf.validate); verified with 2026.7.0.
+# Brings pandas (3.0.6 verified) as its own dependency.
+xarray>=2026.7,<2027
+# Image visualization and the companion-PNG and mosaic-registration code (verified with matplotlib 3.11.2, Pillow 12.3.0).
+matplotlib>=3.11,<4
+pillow>=12.3,<13
+# Automated tests.
+pytest>=8,<10

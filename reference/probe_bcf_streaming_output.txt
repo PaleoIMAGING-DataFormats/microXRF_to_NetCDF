@@ -1,0 +1,27 @@
+# project environment, 2026-09-29, Windows 11, 31.5 GB RAM; run from repo root. Times vary between runs.
+$ python tools/benchmarks/probe_bcf_streaming.py structure
+stream bytes: 577830250 | SFS block bytes: 4064 | SFS compression: None
+header height, width: (240, 1800)
+trailing bytes after last line: 0
+lines: 240 | pixels listed: 432000 | longest line record bytes: 2710881 | counters: {'pixels_in_line=1800': 240}
+framing time s: 1.7 | working set / peak MiB: (50.4, 58.9)
+$ python tools/benchmarks/probe_bcf_streaming.py memory --band-lines 1
+band_lines=1: 240 bands of 14.1 MiB (uint16), 3.7 s, max count 149, working set / peak MiB before (45.8, 48.3) after (64.8, 85.6)
+$ python tools/benchmarks/probe_bcf_streaming.py memory --band-lines 8
+band_lines=8: 30 bands of 112.5 MiB (uint16), 3.9 s, max count 149, working set / peak MiB before (46.1, 48.3) after (163.6, 319.7)
+$ python tools/benchmarks/probe_bcf_streaming.py memory --band-lines 30
+band_lines=30: 8 bands of 421.9 MiB (uint16), 4.0 s, max count 149, working set / peak MiB before (48.3, 50.5) after (470.3, 1043.6)
+$ python tools/benchmarks/probe_bcf_streaming.py verify --band-lines 1
+branches exercised by this file: {'flag=2,n_pulses>0=False': 432000}
+streamed: band_lines=1, band 14.1 MiB (uint16), 6.5 s, max per-pixel channel count 149, total counts 677896870
+working set / peak MiB after streaming (includes the two small references above): (605.0, 623.1)
+binned x8, all 4096 channels, equals public-path downsample=8: True
+per-pixel, first 400 channels, equals public decoder on the real stream: True
+$ python tools/benchmarks/probe_bcf_streaming.py netcdf --out <scratch>/probe.nc   (netCDF4 1.7.4 + xarray 2026.7.0 from a scratch pip --target dir, NOT installed in the project environment)
+written probe.nc: 22.6 s, 196.8 MiB, working set / peak MiB (155.3, 302.9)
+reopened lazily: Array uint8 (240, 1800, 4096) chunksize (4, 60, 4096)
+pixel spectrum (first channels) equal: True
+window equal: True
+energy-channel image equal: True
+whole-file binned x8 equals public-path downsample=8: True
+working set / peak MiB after reopen and checks: (658.6, 922.2)

@@ -1,0 +1,107 @@
+[
+  {
+    "check": "lazy_open_counts_is_dask_with_dims_y_x_energy",
+    "status": "passed",
+    "detail": "Array, dims ('y', 'x', 'energy'), shape (240, 1800, 4096), chunks (2, 30, 4096)"
+  },
+  {
+    "check": "lazy_open_counts_dtype_is_unsigned_integer_as_planned",
+    "status": "passed",
+    "detail": "xarray dtype uint8 (planned uint8); no _FillValue attribute"
+  },
+  {
+    "check": "acquisition_group_has_every_schema_variable",
+    "status": "passed",
+    "detail": "missing: []"
+  },
+  {
+    "check": "lazy_open_element_maps_uint16_shared_grid",
+    "status": "passed",
+    "detail": "uint16, dims ('element', 'y', 'x'), shape (14, 240, 1800); no units attribute (unknown)"
+  },
+  {
+    "check": "mosaic_group_has_pixels_on_its_own_dimensions",
+    "status": "passed",
+    "detail": "(('plane', 'mosaic_y', 'mosaic_x'), (3, 948, 6000))"
+  },
+  {
+    "check": "overview_Image_0_lazy_open_uint8_own_grid",
+    "status": "passed",
+    "detail": "('plane', 'row', 'column') (3, 768, 1024)"
+  },
+  {
+    "check": "overview_Image_1_lazy_open_uint8_own_grid",
+    "status": "passed",
+    "detail": "('plane', 'row', 'column') (3, 768, 1024)"
+  },
+  {
+    "check": "overview_Image_2_lazy_open_uint8_own_grid",
+    "status": "passed",
+    "detail": "('plane', 'row', 'column') (3, 480, 752)"
+  },
+  {
+    "check": "metadata_group_has_every_schema_variable",
+    "status": "passed",
+    "detail": "missing: []"
+  },
+  {
+    "check": "file_is_marked_complete",
+    "status": "passed",
+    "detail": "complete"
+  },
+  {
+    "check": "recorded_source_hashes_equal_input_files",
+    "status": "passed",
+    "detail": "bcf 5ec18488fcd40db5..., rtx c1be8801321d4840..."
+  },
+  {
+    "check": "recorded_source_sizes_equal_input_files",
+    "status": "passed",
+    "detail": "sizes match"
+  },
+  {
+    "check": "provenance_lists_software_and_parameters",
+    "status": "passed",
+    "detail": "{\"bruker_spy\": \"0.1.0\", \"schema\": \"1.0.0\", \"python\": \"3.12.14\", \"platform\": \"Windows-11-10.0.26200-SP0\", \"rosettasciio\": \"0.14.0\", \"netCDF4\": \"1.7.4\", \"numpy\": \"2.5.3\", \"xarray\": \"2026.7.0\", \"dask\": \""
+  },
+  {
+    "check": "counts_binned_8x8_all_channels_equal_public_rosettasciio_path",
+    "status": "passed",
+    "detail": "shape (30, 225, 4096), total 677896870; every one of the 4096 channels enters the comparison"
+  },
+  {
+    "check": "stored_sum_spectrum_from_pixels_equals_sum_of_counts_read_back",
+    "status": "passed",
+    "detail": "total 677896870"
+  },
+  {
+    "check": "counts_first_channels_of_every_pixel_equal_public_decoder",
+    "status": "passed",
+    "detail": "432000 pixels x 400 channels compared exactly"
+  },
+  {
+    "check": "every_rtx_plane_equals_the_diagnostic_decoder_output",
+    "status": "passed",
+    "detail": "21 planes compared; error None; differing []"
+  },
+  {
+    "check": "every_bcf_header_image_plane_equals_the_diagnostic_decoder_output",
+    "status": "passed",
+    "detail": "14 of 14 planes in 7 header images compared (RosettaSciIO returns only one image); differing: []"
+  },
+  {
+    "check": "mosaic_pixels_rotated_90_clockwise_correlate_with_video_mosaic_png",
+    "status": "passed",
+    "detail": "Pearson r per RGB channel: [('pixels', [0.9704, 0.958, 0.953])]"
+  },
+  {
+    "check": "element_maps_ca_fe_correlate_with_cafe_png_blue_and_red",
+    "status": "passed",
+    "detail": "Ca-KA vs blue r 0.9817; Fe-KA vs red r 0.9106"
+  },
+  {
+    "check": "uint16_and_uint32_decodes_identical_no_wraparound",
+    "status": "passed",
+    "detail": "60 bands, maximum count 149"
+  }
+]

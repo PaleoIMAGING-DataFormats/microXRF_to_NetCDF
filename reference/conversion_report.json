@@ -1,0 +1,387 @@
+{
+  "output": "C:\\Users\\abelem\\Documents\\GitHub\\test_microCT\\output\\GRF17A_9-29cm_slab3.nc",
+  "output_size_bytes": 226985418,
+  "output_sha256": "e6a723be8a6d4c95d0cd3601a7fab06d391106694a236ba706b7f65c3c90e3ae",
+  "conversion_seconds": 51.31,
+  "peak_working_set_mib": 453.4,
+  "inputs": {
+    "bcf": {
+      "filename": "GRF17A_9-29cm_slab3_Elemental_map.bcf",
+      "size_bytes": 617320728,
+      "sha256": "5ec18488fcd40db55392e14af570d42568ff4517fc082bec49e519d521253d3a"
+    },
+    "rtx": {
+      "filename": "GRF17A_9-29cm_slab3_Elemental_map.rtx",
+      "size_bytes": 43723950,
+      "sha256": "c1be8801321d4840b285799f09c957e6cdf407c0503ac6e1c0c280190de0ff82",
+      "decompressed_payload_sha256": "832f6f4c090e5413033621335127f7095ceb9ff7f9f7c3604bca2ffba00d4b61"
+    }
+  },
+  "counts_dtype": "uint8",
+  "estimated_logical_bytes": 1808352420,
+  "actual_layout": {
+    "acquisition/counts": {
+      "shape": [
+        240,
+        1800,
+        4096
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        2,
+        30,
+        4096
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "acquisition/video": {
+      "shape": [
+        240,
+        1800
+      ],
+      "dtype": "uint16",
+      "chunks": [
+        120,
+        900
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "acquisition/element_maps": {
+      "shape": [
+        14,
+        240,
+        1800
+      ],
+      "dtype": "uint16",
+      "chunks": [
+        1,
+        120,
+        900
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "mosaic/pixels": {
+      "shape": [
+        3,
+        948,
+        6000
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        1,
+        256,
+        1024
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "acquisition/pixel_times": {
+      "shape": [
+        240,
+        1800
+      ],
+      "dtype": "uint32",
+      "chunks": [
+        120,
+        900
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "overview/Image_0/pixels": {
+      "shape": [
+        3,
+        768,
+        1024
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        1,
+        256,
+        1024
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "overview/Image_1/pixels": {
+      "shape": [
+        3,
+        768,
+        1024
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        1,
+        256,
+        1024
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    },
+    "overview/Image_2/pixels": {
+      "shape": [
+        3,
+        480,
+        752
+      ],
+      "dtype": "uint8",
+      "chunks": [
+        1,
+        256,
+        752
+      ],
+      "filters": {
+        "zlib": true,
+        "shuffle": true,
+        "complevel": 4
+      }
+    }
+  },
+  "compression": {
+    "zlib": true,
+    "complevel": 4,
+    "shuffle": true
+  },
+  "validation": [
+    {
+      "check": "rtx_map_image_size_equals_bcf_grid",
+      "status": "passed",
+      "detail": "1800 x 240 == 1800 x 240"
+    },
+    {
+      "check": "rtx_calibration_equals_bcf_pixel_size_x",
+      "status": "passed",
+      "detail": "RTX 100.014812159301 vs BCF 100.014812159301 (relative tolerance 1e-09)"
+    },
+    {
+      "check": "rtx_calibration_equals_bcf_pixel_size_y",
+      "status": "passed",
+      "detail": "RTX 100.0148121593 vs BCF 100.0148121593 (relative tolerance 1e-09)"
+    },
+    {
+      "check": "rtx_video_plane_bit_identical_to_bcf_video",
+      "status": "passed",
+      "detail": "plane 0 ('Video 1') sha256 6841bf7cbaf490266228e68280d2680ab0178b8ad4551da6c56d5920f3a2e451"
+    },
+    {
+      "check": "bcf_header_video_image_equals_rosettasciio_video",
+      "status": "passed",
+      "detail": "header image 0 sha256 6841bf7cbaf490266228e68280d2680ab0178b8ad4551da6c56d5920f3a2e451"
+    },
+    {
+      "check": "streamed_pixel_sums_do_not_exceed_bcf_header_sum_spectrum",
+      "status": "passed",
+      "detail": "header total 680903120, pixel total 677896870, difference 3006250 counts (0.442 %); equality is NOT expected (cause unverified)"
+    },
+    {
+      "check": "write_pass_decode_equals_exact_uint32_scan_decode",
+      "status": "passed",
+      "detail": "uint16 write pass vs uint32 scan pass: maximum 149, total 677896870, non-zero values 215280205 and all per-channel sums identical, so no count wrapped"
+    },
+    {
+      "check": "all_lines_and_planes_written",
+      "status": "passed",
+      "detail": "240 lines; 35 planes"
+    },
+    {
+      "check": "mosaic_instance_rtx_1_registration_status_recorded",
+      "status": "passed",
+      "detail": "status verified; identity r=0.9955865323428974; best shift [0, 0]"
+    },
+    {
+      "check": "every_written_band_equals_a_fresh_decode",
+      "status": "passed",
+      "detail": "60 bands compared exactly (dtype uint8); 0 differ"
+    },
+    {
+      "check": "stored_pixel_sum_spectrum_matches_stream",
+      "status": "passed",
+      "detail": "total 677896870"
+    },
+    {
+      "check": "counts_dtype_is_integer_and_unchanged",
+      "status": "passed",
+      "detail": "stored dtype uint8, planned uint8; no _FillValue: True"
+    },
+    {
+      "check": "video_equals_bcf_video",
+      "status": "passed",
+      "detail": "shape (240, 1800)"
+    },
+    {
+      "check": "video_equals_rtx_video_plane_sha256",
+      "status": "passed",
+      "detail": "6841bf7cbaf490266228e68280d2680ab0178b8ad4551da6c56d5920f3a2e451"
+    },
+    {
+      "check": "element_maps_equal_rtx_planes_sha256",
+      "status": "passed",
+      "detail": "14 maps compared; differing: []"
+    },
+    {
+      "check": "mosaic_planes_of_every_instance_equal_the_source_plane_sha256",
+      "status": "passed",
+      "detail": "9 planes of 3 instances (RTX and BCF header) compared; differing: []"
+    },
+    {
+      "check": "acquisition_grid_header_images_equal_the_source_plane_sha256",
+      "status": "passed",
+      "detail": "['pixel_times'] compared; differing: []"
+    },
+    {
+      "check": "overview_images_equal_the_source_plane_sha256",
+      "status": "passed",
+      "detail": "['Image_0', 'Image_1', 'Image_2'] compared; differing: []"
+    },
+    {
+      "check": "energy_coordinate_equals_raw_calibration",
+      "status": "passed",
+      "detail": "calib_abs -0.96079607, calib_lin 0.010001"
+    },
+    {
+      "check": "spatial_coordinates_equal_raw_pixel_sizes",
+      "status": "passed",
+      "detail": "pixel_size_y 100.0148121593, pixel_size_x 100.014812159301"
+    },
+    {
+      "check": "lazy_open_counts_is_dask_with_dims_y_x_energy",
+      "status": "passed",
+      "detail": "Array, dims ('y', 'x', 'energy'), shape (240, 1800, 4096), chunks (2, 30, 4096)"
+    },
+    {
+      "check": "lazy_open_counts_dtype_is_unsigned_integer_as_planned",
+      "status": "passed",
+      "detail": "xarray dtype uint8 (planned uint8); no _FillValue attribute"
+    },
+    {
+      "check": "acquisition_group_has_every_schema_variable",
+      "status": "passed",
+      "detail": "missing: []"
+    },
+    {
+      "check": "lazy_open_element_maps_uint16_shared_grid",
+      "status": "passed",
+      "detail": "uint16, dims ('element', 'y', 'x'), shape (14, 240, 1800); no units attribute (unknown)"
+    },
+    {
+      "check": "mosaic_group_has_pixels_on_its_own_dimensions",
+      "status": "passed",
+      "detail": "(('plane', 'mosaic_y', 'mosaic_x'), (3, 948, 6000))"
+    },
+    {
+      "check": "overview_Image_0_lazy_open_uint8_own_grid",
+      "status": "passed",
+      "detail": "('plane', 'row', 'column') (3, 768, 1024)"
+    },
+    {
+      "check": "overview_Image_1_lazy_open_uint8_own_grid",
+      "status": "passed",
+      "detail": "('plane', 'row', 'column') (3, 768, 1024)"
+    },
+    {
+      "check": "overview_Image_2_lazy_open_uint8_own_grid",
+      "status": "passed",
+      "detail": "('plane', 'row', 'column') (3, 480, 752)"
+    },
+    {
+      "check": "metadata_group_has_every_schema_variable",
+      "status": "passed",
+      "detail": "missing: []"
+    }
+  ],
+  "plan": {
+    "status": "ESTIMATES (not measured)",
+    "counts_dtype": "uint8",
+    "counts_dtype_reason": "auto: observed maximum count 149 fits uint8 (max 255)",
+    "estimated_logical_bytes": {
+      "acquisition/counts": 1769472000,
+      "acquisition/video": 864000,
+      "acquisition/element_maps": 12096000,
+      "acquisition/sum_spectra_and_coordinates": 131968,
+      "acquisition/header_images_on_grid": 1728000,
+      "mosaic/pixels": 17064000,
+      "overview/pixels": 5801472,
+      "metadata/text": 1194980
+    },
+    "estimated_logical_total_bytes": 1808352420,
+    "chunks": {
+      "counts": [
+        2,
+        30,
+        4096
+      ],
+      "element_maps": [
+        1,
+        120,
+        900
+      ],
+      "video": [
+        120,
+        900
+      ],
+      "mosaic": [
+        1,
+        256,
+        1024
+      ]
+    },
+    "band_lines": 4,
+    "decode_dtype": "uint16",
+    "disk": {
+      "free_bytes": 382114807808,
+      "worst_case_output_bytes": 1843213160,
+      "required_free_bytes": 2380084072,
+      "sufficient": true
+    },
+    "memory_mib": {
+      "python_baseline": 110.0,
+      "header_parse_transient": 175.1,
+      "decode_band_and_raw_records": 166.0,
+      "output_conversion_and_chunk_cache": 56.2,
+      "hdf5_and_allocator_retention": 64.0,
+      "rtx_plane_and_residual": 16.8,
+      "estimated_peak": 495.3,
+      "available": 5092.5,
+      "sufficient": true
+    },
+    "warnings": []
+  },
+  "software": {
+    "bruker_spy": "0.1.0",
+    "schema": "1.0.0",
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "rosettasciio": "0.14.0",
+    "netCDF4": "1.7.4",
+    "numpy": "2.5.3",
+    "xarray": "2026.7.0",
+    "dask": "2026.8.0",
+    "pillow": "12.3.0",
+    "hdf5": "1.14.6",
+    "netcdf_c": "4.9.3"
+  }
+}

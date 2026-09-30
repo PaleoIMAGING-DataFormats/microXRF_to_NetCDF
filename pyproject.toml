@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "microxrf_to_netcdf"
+description = "Bounded-memory sequential conversion of micro-XRF acquisition data (currently Bruker BCF + RTX) into a unified NetCDF-4 hypercube"
+readme = "README.md"
+requires-python = ">=3.12"
+dynamic = ["version", "dependencies"]
+authors = [
+    {name = "Andre L. Belem"},
+    {name = "F.R.I.D.A.Y."},
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "microxrf_to_netcdf.__version__"}
+# requirements.txt is the single source of the dependency constraints (it also lists the test dependencies).
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
