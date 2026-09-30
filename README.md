@@ -117,6 +117,6 @@ This distinction is particularly important for derived or insufficiently documen
 
 This repository was developed using a vibe-coding workflow, with extensive use of AI coding agents for implementation, refactoring, testing, and documentation under human direction and scientific supervision.
 
-The code and scientific outputs should not be assumed to be correct solely because they were generated or validated by automated agents. Reproducibility, independent validation, and review against the original scientific data remain essential.
+The code and scientific outputs should not be assumed to be correct solely because they were generated or validated by automated agents. Reproducibility, independent validation, and review against the original scientific data remain essential. F.R.I.D.A.Y. uses Claude Code as the primary coding agent, complemented by locally hosted Codex models accessed through Continue and served by Ollama.
 
 [`CLAUDE.md`](CLAUDE.md) contains the project architecture, conventions, constraints, and development instructions used during AI-assisted development. It can also be used as project context when starting a new session with the coding agent of your choice.
